@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<bean id="voter" class="daytwo.core.Voter">
+<property name="address" value="Coimbatore"/>
+</bean>
+
+<bean id="section" class="daytwo.core.Section" autowire="byName">
+<!-- <property name="voter1" ref="voter1"/>
+<property name="voter2" ref="voter2"/>
+<property name="voter3" ref="voter3"/> -->
+</bean>
+
+<bean id="voter1" class="daytwo.core.Voter" parent="voter" scope="singleton">
+<property name="name" value="Vijaya"/>
+<property name="age" value="38"/>
+</bean>
+
+<bean id="voter2" class="daytwo.core.Voter" parent="voter" scope="singleton">
+<property name="age" value="28"/>
+</bean>
+
+<bean id="voter3" class="daytwo.core.Voter" parent="voter" scope="singleton">
+<property name="name" value="Razak"/>
+<property name="age" value="${voter3.age}"/>
+</bean>
+
+<!-- <bean id="voter4" class="daytwo.core.Voter" parent="voter1" scope="singleton">
+<property name="name" value="Sabari"/>
+</bean> -->
+
+<bean class="daytwo.core.BundlePost"/>
+<bean class="daytwo.core.BundleFactory"/>
+
+<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+<property name="locations" value="place.properties"></property>
+</bean>
+
+</beans>
