@@ -1,0 +1,28 @@
+dayTwo:
+Bean def inher
+
+ApplicationContextAware, BeanAware
+
+Bean scope: singleton, prototype
+
+Life cycle of bean call back: init, destroy
+
+BeanPostprocessor
+
+BeanFactoryPostProcessor, Message property via PropertyPlaceholderConfigurer
+
+Autowire by xml
+
+Interface actions
+
+Annotations and Required;RequiredAnnotationBeanPostProcessor
+
+Autowired with AutowiredAnnotationBeanPostProcessor, Qualifier, ContextAnnotation
+
+JSR250 annoations: Resource(name=), PostConstruct, PreDestroy
+
+Component Sterotype: component scan from context
+
+Message resource autowire>> MessageResourceBundle
+
+Event Handling: ApplicationListener, Application Event, ApplicationEventPublisher, ApplicationEventPublisherAware

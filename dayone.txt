@@ -1,0 +1,30 @@
+Full stack developer:
+UI/ front end>> presentation logic>> angular
+Backend>> spring core, mvc, boot
+Db>> ORM>> Hibernate, MySQL
+Rest API>> web services
+Security
+testing>> JUnit, Mockito
+Git>> VCS
+Building tools: Maven
+CI>> Jenkins
+
+Frameworks:
+Business logic:
+Spring:
+Core, AOP, Data, MVC, Boot
+
+Dependency injection:
+bean factory
+application context
+
+properties
+collections
+
+annotations
+
+Components:
+bean>> POJO
+main class
+xml>> spring 
+jars
