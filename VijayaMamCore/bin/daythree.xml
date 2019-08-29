@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans 
+xmlns="http://www.springframework.org/schema/beans"
+xmlns:context="http://www.springframework.org/schema/context"
+
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="
+http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!-- <bean id="annots" class="daythree.core.Annots">
+</bean> -->
+
+<bean id="dlithe" class="daythree.core.Dlithe">
+<constructor-arg index="0">
+<array>
+<ref bean="free1"/><ref bean="free2"/><ref bean="free3"/><ref bean="free5"/>
+</array>
+</constructor-arg>
+</bean>
+
+<bean id="smart" class="daythree.core.Smart">
+<property name="sfree">
+<list>
+<ref bean="free1"/><ref bean="free3"/>
+</list>
+</property>
+</bean> 
+
+<bean id="free1" class="daythree.core.Freelancer">
+<qualifier value="freelance1"/>
+<constructor-arg index="0" value="Razak Mohamed"/><constructor-arg index="1" value="Java"/>
+<constructor-arg index="2" value="7"/><constructor-arg index="3" value="4000"/>
+</bean>
+
+<bean id="free2" class="daythree.core.Freelancer">
+<qualifier value="freelance2"/>
+<constructor-arg index="0" value="Maheshwaran"/><constructor-arg index="1" value="Java"/>
+<constructor-arg index="2" value="15"/><constructor-arg index="3" value="5000"/>
+</bean>
+
+<bean id="free3" class="daythree.core.Freelancer">
+<constructor-arg index="0" value="Vijaya"/><constructor-arg index="1" value="Dot net"/>
+<constructor-arg index="2" value="10"/><constructor-arg index="3" value="4000"/>
+</bean>
+
+<bean id="free4" class="daythree.core.Freelancer">
+<constructor-arg index="0" value="Shakthi"/><constructor-arg index="1" value="C"/>
+<constructor-arg index="2" value="3"/><constructor-arg index="3" value="3000"/>
+</bean>
+
+<bean id="free5" class="daythree.core.Freelancer">
+<constructor-arg index="0" value="Murali"/><constructor-arg index="1" value="C"/>
+<constructor-arg index="2" value="3"/><constructor-arg index="3" value="3000"/>
+</bean>
+
+<!-- <bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/>
+<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/> -->
+
+<context:annotation-config/>
+<context:component-scan base-package="daythree.core"/>
+
+</beans>
