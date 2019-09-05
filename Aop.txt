@@ -1,0 +1,20 @@
+dayfour:
+Aspect Oriented Programming
+
+logging/ informations between methods purpose
+
+aspect library
+
+@Before>> before method runs
+@Around>> while method active status
+@After
+@AfterReturning
+@Pointcut
+
+each annotation u can use
+execution>> particular method/ class of methods
+within>> patiular class methods
+args(param)>> setter methods to find which param setted, param can be any type/class
+JoinPoint obj>> finding which aspect pointcut executed in respective method
+
+customaspect: @annoation(customannotationname)
