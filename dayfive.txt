@@ -1,0 +1,30 @@
+day five:
+Spring Data:
+
+1. JDBC: default db connection
+
+DataSource in xml>> DriverManagerDataSource
+
+2. DAO: reduces first two lines of jdbc with exception and rest are same like jdbc
+3. JdbcTemplate:
+reduces everything via methods like
+queryForObject(sql,new Object[]{param1,param2,.},ResultClass.class)
+queryForInt
+query
+update
+execute
+
+
+4. NamedParameterTemplate:
+like jdbc template but for dynamic parameter we gonna use
+sql: :identifier>> named param sql
+SqlParamterSource obj=new MapSqlParameterSource("namedparam1", value1).addValue("namedparam2",value2)
+
+(sql,obj)>>execution via namedParameter
+
+
+CREATE TABLE `test`.`vijaya` (
+`num` INT NOT NULL AUTO_INCREMENT ,
+`val` INT NOT NULL ,
+PRIMARY KEY ( `num` )
+)
