@@ -11,7 +11,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class DataActions 
 {
 	private DataSource dataSource;

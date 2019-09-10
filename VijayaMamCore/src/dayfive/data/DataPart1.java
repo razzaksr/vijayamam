@@ -10,7 +10,7 @@ public class DataPart1
 		ApplicationContext app=new ClassPathXmlApplicationContext("spring-data.xml");
 		DataActions action=(DataActions)app.getBean("dataActions");
 		//action.createTable();
-		//action.insert(new Recruitment("Google", "AI", 5.5));
+		//action.insert(new Recruitment("EvryIndiaPvtLtd", "Java, Python", 3.5));
 		//System.out.println(action.getRowStatus());
 		//System.out.println(action.getCompany(3));
 		//System.out.println(action.getCompanies(4.0, 7.2));
