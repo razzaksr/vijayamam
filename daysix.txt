@@ -1,0 +1,31 @@
+Day 6
+Spring MVC:
+Web development:
+Model: POJO
+Controller: Java file
+View: pages like html, jsp, thymeleaf
+
+dispatcher-servlet.xml>> mapper
+
+web.xml>> front controller
+
+issues:
+Application server: tomcat
+Jars
+
+SpringBoot:
+1. Microservice architecture
+2. Maven
+3. Deployment
+4. Auto configuration
+
+@RequestMapping("/url")
+@PathVariable("")>> url data retrievals
+
+@PathVariable Map<OBje,obj> obj
+	for this need to add mvc xmlns in dispatcher-servlet.xml
+
+Handling with form
+In controller: @RequestMapping(value,method)
+@RequestParam(value, defaultValue)>> form submission data
+@RequestParam with Map like path variable
