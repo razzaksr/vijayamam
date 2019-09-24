@@ -13,15 +13,25 @@ http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 <context:annotation-config/>
 
 <mvc:annotation-driven/>
+<!-- dayseven -->
+<context:component-scan base-package="dayseven.mvc"/>
+<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">  
+        <property name="prefix" value="/WEB-INF/dayseven/" />  
+        <property name="suffix" value=".jsp" />
+</bean>
 
+
+<!--daysix--> 
+<!--
 <context:component-scan base-package="basic"/> 
-<!-- <bean id="HandlerMapping" class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/> -->
+<bean id="HandlerMapping" class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
 
-<!-- <bean id="/basic" class="basic.BasicController"/> -->
+<bean id="/basic" class="basic.BasicController"/>
 
 <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">  
         <property name="prefix" value="/WEB-INF/jsp/" />  
         <property name="suffix" value=".jsp" />  
-</bean> 
+</bean>  
+--> 
     
 </beans>

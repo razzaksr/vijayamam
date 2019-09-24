@@ -1,0 +1,12 @@
+dayseven
+
+Model integration
+Component
+
+Collection
+User defined class: Autowired
+
+ModelAttribute
+Model
+
+BindingResults
