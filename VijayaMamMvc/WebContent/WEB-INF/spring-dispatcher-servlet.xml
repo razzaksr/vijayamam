@@ -13,12 +13,25 @@ http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 <context:annotation-config/>
 
 <mvc:annotation-driven/>
+
+<!-- day eight -->
+<context:component-scan base-package="dayeight.mvc"/>
+<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">  
+        <property name="prefix" value="/WEB-INF/dayeight/" />  
+        <property name="suffix" value=".jsp" />
+</bean>
+<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+<property name="url" value="jdbc:mysql://localhost:3306/test"/>
+<property name="username" value="root" />
+<property name="password" value="" />
+</bean>
 <!-- dayseven -->
-<context:component-scan base-package="dayseven.mvc"/>
+<!-- <context:component-scan base-package="dayseven.mvc"/>
 <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">  
         <property name="prefix" value="/WEB-INF/dayseven/" />  
         <property name="suffix" value=".jsp" />
-</bean>
+</bean> -->
 
 
 <!--daysix--> 
