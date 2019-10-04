@@ -14,8 +14,19 @@ http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
 <mvc:annotation-driven/>
 
+<!-- daynine -->
+<context:component-scan base-package="daynine.mvc"/>
+<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">  
+        <property name="prefix" value="/WEB-INF/daynine/" />  
+        <property name="suffix" value=".jsp" />
+</bean>
+
+<bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+<property name="basename" value="/WEB-INF/daynine/nineproperties"/>
+</bean>
+
 <!-- day eight -->
-<context:component-scan base-package="dayeight.mvc"/>
+<!-- <context:component-scan base-package="dayeight.mvc"/>
 <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">  
         <property name="prefix" value="/WEB-INF/dayeight/" />  
         <property name="suffix" value=".jsp" />
@@ -25,7 +36,7 @@ http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 <property name="url" value="jdbc:mysql://localhost:3306/test"/>
 <property name="username" value="root" />
 <property name="password" value="" />
-</bean>
+</bean> -->
 <!-- dayseven -->
 <!-- <context:component-scan base-package="dayseven.mvc"/>
 <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">  

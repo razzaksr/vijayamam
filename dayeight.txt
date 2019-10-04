@@ -1,0 +1,24 @@
+Form validations:
+to validate forms we have few annotations from jars of hibernate validation
+
+Adding annotation in model class
+@Size(min=,max=)
+if condition fails it gives default error msg
+
+meanwhile in controller add @Valid annotation too
+
+Custom Messages:
+1. @Size(max,min,message="custom message with {max}{min}")
+2. Writing exculsive property file for messages to do that we need to add messageSource id of bean from ReloadableResourceBundleMessageSource with property file location
+	In property file syntax can be,
+	Annoation.objectOfBean.property=messasge{0} and {1}
+{}---> these are all plcaeholders
+also we can avoid  to restart server for every changes by cacheSeconds value 1 as property in messageSource
+More annotations:
+@Pattern(regexp="")
+@Past
+@Future
+@Max
+@Min
+@Null
+
