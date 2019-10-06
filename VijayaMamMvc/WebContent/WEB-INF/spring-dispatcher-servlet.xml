@@ -15,7 +15,8 @@ http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 <mvc:annotation-driven/>
 
 <!-- daynine -->
-<context:component-scan base-package="daynine.mvc"/>
+<!-- <context:component-scan base-package="daynine.mvc"/> -->
+<context:component-scan base-package="dayten.mvc"/>
 <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">  
         <property name="prefix" value="/WEB-INF/daynine/" />  
         <property name="suffix" value=".jsp" />

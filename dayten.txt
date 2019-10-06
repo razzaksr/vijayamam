@@ -1,0 +1,33 @@
+Day ten:
+
+Exception Handling in MVC:
+Custom Exception
+ControllerAdvice
+ExceptionHandler
+
+SpringBoot:
+Stand alone application
+
+external dependencies free
+eg:
+application server no need
+
+Concentrate on coding part not convention/ configuration part
+
+Auto configure
+
+application.properties
+manual configuration
+
+Maven:
+automation code building tool
+pom.xml>> project object model
+groupid>> package
+artifactid>> project name
+version
+scope
+
+ease of deployment:
+clean install
+
+App.java
