@@ -1,0 +1,43 @@
+Dayeleven
+Hibernate:
+Object Relational Mapping
+
+Java Persistance Api
+
+Entity
+Table
+Column
+Id
+GeneratedValue
+.
+.
+
+CRUDL
+Embedded
+Collection
+Inheritance
+
+Mapping: one to one, one to many, many to one, many to many
+
+HQL
+
+Criteria
+Restriction
+
+Second level cache
+
+Web services
+CrudRespository
+JpaRepository
+.
+.
+
+steps:
+SessionFactory
+Session
+begin
+
+operation
+
+session.commit
+session.close
