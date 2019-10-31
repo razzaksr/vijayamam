@@ -1,0 +1,10 @@
+package hibernate.day.thirteen;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface RepoKart extends JpaRepository<Kart, Integer>
+{
+
+}

@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>hibernate.day</groupId>
-	<artifactId>VijayaMamHibernate</artifactId>
+	<artifactId>VijayaMamHibernate-1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>VijayaMamHibernate</name>
+	<name>VijayaMamHibernate-1</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -23,25 +23,24 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
-    		<groupId>mysql</groupId>
-    		<artifactId>mysql-connector-java</artifactId>
-    		<version>5.1.48</version>
-		</dependency>
-		<dependency>
-    		<groupId>org.apache.tomcat.embed</groupId>
-    		<artifactId>tomcat-embed-jasper</artifactId>
-    		<version>9.0.27</version>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.1</version>
+			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- <dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-core</artifactId>
+    <version>3.6.2.Final</version>
+</dependency> -->
+		
 	</dependencies>
 
 	<build>
