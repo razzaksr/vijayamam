@@ -13,10 +13,15 @@ public class Control
 	public void testDetached()
 	{
 		WaterBottle bottle=new WaterBottle( "Kinley",1, 20);// transient
+		{
 			repo.save(bottle);// persist
 			bottle.setBottleCap(2);// detached
-		repo.save(bottle);// persist
-		Optional<WaterBottle> bot=repo.findById(1);
-		System.out.println(bot);
+		}
+		
+		//repo.save(bottle);
+		/*
+		 * repo.save(bottle);// persist Optional<WaterBottle> bot=repo.findById(1);
+		 * System.out.println(bot);
+		 */
 	}
 }
