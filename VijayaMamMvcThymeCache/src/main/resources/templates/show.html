@@ -1,0 +1,21 @@
+<html xmlns:th="https://thymeleaf.org">
+
+<head>
+	<title>title</title>
+</head>
+
+<body>
+	It works!
+	
+	<table border="7px" cellspacing="4px" cellpadding="4px">
+	<tr>
+	<th th:text="${'LapId'}"></th><th th:text="${'LapModel'}"></th></th><th th:text="${'LapPrice'}"></th>
+	</tr>
+	<tr th:each="lap:${m}">
+	<td th:text="${lap.macId}"></td><td th:text="${lap.macModel}"></td>
+	<td th:text="${lap.macPrice}"></td>
+	</tr>
+	</table>
+</body>
+
+</html>
